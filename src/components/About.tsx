@@ -1,31 +1,23 @@
 import { GraduationCap, Code2, Lightbulb, Heart } from "lucide-react";
-
 const About = () => {
-  const highlights = [
-    {
-      icon: GraduationCap,
-      title: "Education",
-      description: "B.E. Computer Science and Engineering, Easwari Engineering College, 2028",
-    },
-    {
-      icon: Code2,
-      title: "Passion",
-      description: "Programming, problem-solving, and building functional solutions",
-    },
-    {
-      icon: Lightbulb,
-      title: "Philosophy",
-      description: "Clean, thoughtful design combined with practical functionality",
-    },
-    {
-      icon: Heart,
-      title: "Approach",
-      description: "Always learning, always creating, always growing",
-    },
-  ];
-
-  return (
-    <section id="about" className="py-24 relative">
+  const highlights = [{
+    icon: GraduationCap,
+    title: "Education",
+    description: "B.E. Computer Science and Engineering, Easwari Engineering College, 2028"
+  }, {
+    icon: Code2,
+    title: "Passion",
+    description: "Programming, problem-solving, and building functional solutions"
+  }, {
+    icon: Lightbulb,
+    title: "Philosophy",
+    description: "Clean, thoughtful design combined with practical functionality"
+  }, {
+    icon: Heart,
+    title: "Approach",
+    description: "Always learning, always creating, always growing"
+  }];
+  return <section id="about" className="py-24 relative">
       {/* Decorative Stars */}
       <div className="absolute top-20 right-10 text-primary text-2xl animate-float">✦</div>
       <div className="absolute bottom-20 left-10 text-amber text-xl animate-float animation-delay-400">✦</div>
@@ -42,7 +34,7 @@ const About = () => {
           {/* Bio Text */}
           <div className="space-y-6">
             <p className="text-lg text-foreground leading-relaxed">
-              I'm <span className="text-primary font-semibold">Alvina Rejo A F</span>, a budding Computer Science and Engineering student with a deep passion for technology and problem-solving.
+              I'm <span className="text-primary font-semibold">Alvina Rejo A F</span>, a budding Computer Science and Engineering with a passion for creating clean, functional and visually thoughtful digital experiences. I enjoy working at the intersection of design and technology, where creativity meets logic and ideas turn into real, usable products.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Currently pursuing my B.E. at Easwari Engineering College (Class of 2028), I'm on a journey to master the art of creating clean, functional, and beautifully designed projects. I believe that great software isn't just about code—it's about crafting experiences that make a difference.
@@ -70,12 +62,9 @@ const About = () => {
 
           {/* Highlight Cards */}
           <div className="grid sm:grid-cols-2 gap-4">
-            {highlights.map((item, index) => (
-              <div
-                key={item.title}
-                className="bg-card p-6 rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 group"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
+            {highlights.map((item, index) => <div key={item.title} className="bg-card p-6 rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 group" style={{
+            animationDelay: `${index * 100}ms`
+          }}>
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <item.icon className="w-6 h-6 text-primary" />
                 </div>
@@ -83,13 +72,10 @@ const About = () => {
                   {item.title}
                 </h3>
                 <p className="text-sm text-muted-foreground">{item.description}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
