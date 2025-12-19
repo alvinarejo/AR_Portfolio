@@ -37,7 +37,7 @@ const About = () => {
               I'm <span className="text-primary font-semibold">Alvina Rejo A F</span>, a budding Computer Science and Engineering with a passion for creating clean, functional and visually thoughtful digital experiences. I enjoy working at the intersection of design and technology, where creativity meets logic and ideas turn into real, usable products.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Currently pursuing my B.E. at Easwari Engineering College (Class of 2028), I'm on a journey to master the art of creating clean, functional, and beautifully designed projects. I believe that great software isn't just about code—it's about crafting experiences that make a difference.
+              I am currently exploring front end, backend, databases and AI, building projects that help me understand how things work behind the scenes. Whether it is coding, designing or learning a new tool, I am always excited to grow my skills and experiment with new possibilities.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               My approach combines technical expertise with thoughtful design, always striving to build solutions that are both practical and elegant. Whether it's developing Java applications, exploring IoT systems, or diving into AI, I embrace every opportunity to learn and grow.
