@@ -40,7 +40,7 @@ const About = () => {
               I am currently exploring front end, backend, databases and AI, building projects that help me understand how things work behind the scenes. Whether it is coding, designing or learning a new tool, I am always excited to grow my skills and experiment with new possibilities.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              My approach combines technical expertise with thoughtful design, always striving to build solutions that are both practical and elegant. Whether it's developing Java applications, exploring IoT systems, or diving into AI, I embrace every opportunity to learn and grow.
+              Beyond academics, I love working on projects that feel meaningful, aesthetic and impactful. I believe in learning by building, step by step and iteration by iteration, and I am driven by curiosity, improvement and the desire to create things people genuinely enjoy using.
             </p>
 
             {/* Stats */}
