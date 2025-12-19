@@ -30,9 +30,9 @@ const About = () => {
           <h2 className="section-heading">About Me</h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center lg:px-8">
           {/* Bio Text */}
-          <div className="space-y-6">
+          <div className="space-y-6 pl-4 lg:pl-6">
             <p className="text-lg text-foreground leading-relaxed">
               I'm <span className="text-primary font-semibold">Alvina Rejo A F</span>, a budding Computer Science and Engineering with a passion for creating clean, functional and visually thoughtful digital experiences. I enjoy working at the intersection of design and technology, where creativity meets logic and ideas turn into real, usable products.
             </p>
@@ -61,7 +61,7 @@ const About = () => {
           </div>
 
           {/* Highlight Cards */}
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid sm:grid-cols-2 gap-4 pr-4 lg:pr-6">
             {highlights.map((item, index) => <div key={item.title} className="bg-card p-6 rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 group" style={{
             animationDelay: `${index * 100}ms`
           }}>
