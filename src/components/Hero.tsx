@@ -79,8 +79,8 @@ const Hero = () => {
           {/* Profile Photo */}
           <div className="order-1 lg:order-2 flex justify-center animate-slide-in-right">
             <div className="relative">
-              {/* Photo Frame */}
-              <div className="relative w-72 h-96 md:w-80 md:h-[28rem] rounded-3xl overflow-hidden border-4 border-primary/30 shadow-2xl shadow-primary/20">
+              {/* Photo Frame - Square Mask */}
+              <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden border-4 border-primary/30 shadow-2xl shadow-primary/20">
                 <img
                   src={profilePhoto}
                   alt="Alvina Rejo A F - CSE Engineer"
