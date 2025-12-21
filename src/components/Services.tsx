@@ -25,18 +25,18 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 relative">
+    <section id="services" className="py-24 relative" style={{ backgroundColor: '#e8e0d3' }}>
       {/* Decorative Stars */}
-      <div className="absolute top-20 right-20 text-primary text-2xl animate-float">✦</div>
-      <div className="absolute bottom-20 left-20 text-amber text-xl animate-float animation-delay-400">✦</div>
+      <div className="absolute top-20 right-20 text-2xl animate-float" style={{ color: '#eba627' }}>✦</div>
+      <div className="absolute bottom-20 left-20 text-xl animate-float animation-delay-400" style={{ color: '#ac693c' }}>✦</div>
 
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-primary font-medium mb-2 flex items-center gap-2 justify-center">
+          <p className="font-medium mb-2 flex items-center gap-2 justify-center" style={{ color: '#ac693c' }}>
             <span>✦</span> What I'm looking for
           </p>
-          <h2 className="section-heading">Opportunities</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto mt-4">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold" style={{ color: '#eba627' }}>Opportunities</h2>
+          <p className="max-w-2xl mx-auto mt-4" style={{ color: '#394b36' }}>
             Open to internships, learning opportunities, and project collaborations that help me grow as a developer.
           </p>
         </div>
@@ -45,16 +45,16 @@ const Services = () => {
           {opportunities.map((item, index) => (
             <div
               key={item.title}
-              className="group bg-card p-6 rounded-2xl border border-border hover:border-primary transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className="group p-6 rounded-2xl border transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+              style={{ backgroundColor: '#394b36', borderColor: '#394b36' }}
             >
-              <div className="w-14 h-14 bg-gradient-gold rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg shadow-primary/20">
-                <item.icon className="w-7 h-7 text-primary-foreground" />
+              <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg" style={{ background: 'linear-gradient(135deg, #eba627, #ac693c)' }}>
+                <item.icon className="w-7 h-7" style={{ color: '#050504' }} />
               </div>
-              <h3 className="font-display text-xl font-semibold text-foreground mb-2">
+              <h3 className="font-display text-xl font-semibold mb-2" style={{ color: '#e8e0d3' }}>
                 {item.title}
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-sm leading-relaxed" style={{ color: 'rgba(232, 224, 211, 0.8)' }}>
                 {item.description}
               </p>
             </div>
@@ -63,11 +63,11 @@ const Services = () => {
 
         {/* Call to Action */}
         <div className="mt-16 text-center">
-          <div className="inline-block bg-secondary/50 rounded-2xl p-8 border border-border">
-            <p className="text-lg text-foreground mb-4">
+          <div className="inline-block rounded-2xl p-8 border" style={{ backgroundColor: '#394b36', borderColor: '#394b36' }}>
+            <p className="text-lg mb-4" style={{ color: '#e8e0d3' }}>
               Interested in working together?
             </p>
-            <a href="#contact" className="btn-primary inline-flex items-center gap-2">
+            <a href="#contact" className="inline-flex items-center gap-2 font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-lg" style={{ backgroundColor: '#eba627', color: '#050504' }}>
               Let's Connect
             </a>
           </div>

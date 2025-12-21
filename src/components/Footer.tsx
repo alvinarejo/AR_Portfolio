@@ -22,13 +22,13 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="py-8 border-t border-border bg-card/50">
+    <footer className="py-8 border-t" style={{ backgroundColor: '#394b36', borderColor: '#050504' }}>
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Copyright */}
-          <div className="flex items-center gap-1 text-muted-foreground text-sm">
+          <div className="flex items-center gap-1 text-sm" style={{ color: 'rgba(232, 224, 211, 0.7)' }}>
             <span>© {currentYear} Alvina Rejo A F. Made with</span>
-            <Heart className="w-4 h-4 text-primary fill-primary" />
+            <Heart className="w-4 h-4" style={{ color: '#eba627', fill: '#eba627' }} />
           </div>
 
           {/* Social Links */}
@@ -39,10 +39,11 @@ const Footer = () => {
                 href={link.href}
                 target={link.href.startsWith("http") ? "_blank" : undefined}
                 rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="p-2 text-muted-foreground hover:text-primary transition-colors"
+                className="p-2 transition-colors"
+                style={{ color: 'rgba(232, 224, 211, 0.7)' }}
                 aria-label={link.label}
               >
-                <link.icon className="w-5 h-5" />
+                <link.icon className="w-5 h-5 hover:text-[#eba627]" />
               </a>
             ))}
           </div>
