@@ -17,9 +17,9 @@ const Projects = () => {
       color: "from-amber to-accent",
     },
     {
-      title: "Smart Glasses for Visually Impaired",
-      description: "A wearable assistive technology solution using ultrasonic sensors and Arduino Nano to help visually impaired individuals navigate their environment safely.",
-      technologies: ["Arduino Nano", "Ultrasonic Sensor", "3D Printing", "Embedded C"],
+      title: "Automatic Rain Protection System",
+      description: "An Arduino-based system that uses a rain sensor to automatically protect clothes from rain by triggering a sheltering mechanism.",
+      technologies: ["Arduino", "Rain Sensor", "Servo Motor", "Embedded C"],
       icon: Eye,
       color: "from-accent to-primary",
     },
