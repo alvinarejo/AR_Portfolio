@@ -56,18 +56,18 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 relative">
+    <section id="contact" className="py-24 relative" style={{ backgroundColor: '#e8e0d3' }}>
       {/* Decorative Stars */}
-      <div className="absolute top-20 right-10 text-primary text-3xl animate-float">✦</div>
-      <div className="absolute bottom-40 left-10 text-amber text-2xl animate-float animation-delay-600">✦</div>
+      <div className="absolute top-20 right-10 text-3xl animate-float" style={{ color: '#eba627' }}>✦</div>
+      <div className="absolute bottom-40 left-10 text-2xl animate-float animation-delay-600" style={{ color: '#ac693c' }}>✦</div>
 
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-primary font-medium mb-2 flex items-center gap-2 justify-center">
+          <p className="font-medium mb-2 flex items-center gap-2 justify-center" style={{ color: '#ac693c' }}>
             <span>✦</span> Get in touch
           </p>
-          <h2 className="section-heading">Contact Me</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto mt-4">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold" style={{ color: '#eba627' }}>Contact Me</h2>
+          <p className="max-w-2xl mx-auto mt-4" style={{ color: '#394b36' }}>
             Have a project in mind or want to discuss opportunities? I'd love to hear from you.
           </p>
         </div>
@@ -76,10 +76,10 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h3 className="font-display text-2xl font-semibold text-foreground mb-4">
+              <h3 className="font-display text-2xl font-semibold mb-4" style={{ color: '#050504' }}>
                 Let's Connect
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="leading-relaxed" style={{ color: '#394b36' }}>
                 I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out through any of the channels below.
               </p>
             </div>
@@ -91,14 +91,15 @@ const Contact = () => {
                   href={item.href}
                   target={item.href.startsWith("http") ? "_blank" : undefined}
                   rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="flex items-center gap-4 p-4 bg-card rounded-xl border border-border hover:border-primary transition-all duration-300 group"
+                  className="flex items-center gap-4 p-4 rounded-xl border transition-all duration-300 group"
+                  style={{ backgroundColor: '#394b36', borderColor: '#394b36' }}
                 >
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <item.icon className="w-5 h-5 text-primary" />
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center transition-colors" style={{ backgroundColor: 'rgba(235, 166, 39, 0.2)' }}>
+                    <item.icon className="w-5 h-5" style={{ color: '#eba627' }} />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">{item.label}</p>
-                    <p className="text-foreground font-medium group-hover:text-primary transition-colors">
+                    <p className="text-sm" style={{ color: 'rgba(232, 224, 211, 0.7)' }}>{item.label}</p>
+                    <p className="font-medium transition-colors" style={{ color: '#e8e0d3' }}>
                       {item.value}
                     </p>
                   </div>
@@ -107,21 +108,21 @@ const Contact = () => {
             </div>
 
             {/* Location */}
-            <div className="flex items-center gap-3 text-muted-foreground">
-              <MapPin className="w-5 h-5 text-primary" />
+            <div className="flex items-center gap-3" style={{ color: '#394b36' }}>
+              <MapPin className="w-5 h-5" style={{ color: '#eba627' }} />
               <span>Chennai, India</span>
             </div>
           </div>
 
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="bg-card p-8 rounded-2xl border border-border">
-            <h3 className="font-display text-xl font-semibold text-foreground mb-6">
+          <form onSubmit={handleSubmit} className="p-8 rounded-2xl border" style={{ backgroundColor: '#394b36', borderColor: '#394b36' }}>
+            <h3 className="font-display text-xl font-semibold mb-6" style={{ color: '#e8e0d3' }}>
               Send a Message
             </h3>
 
             <div className="space-y-5">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                <label htmlFor="name" className="block text-sm font-medium mb-2" style={{ color: '#e8e0d3' }}>
                   Your Name
                 </label>
                 <input
@@ -131,13 +132,14 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                  className="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-1 transition-all"
+                  style={{ backgroundColor: '#050504', borderColor: '#050504', color: '#e8e0d3' }}
                   placeholder="John Doe"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                <label htmlFor="email" className="block text-sm font-medium mb-2" style={{ color: '#e8e0d3' }}>
                   Email Address
                 </label>
                 <input
@@ -147,13 +149,14 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                  className="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-1 transition-all"
+                  style={{ backgroundColor: '#050504', borderColor: '#050504', color: '#e8e0d3' }}
                   placeholder="john@example.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                <label htmlFor="message" className="block text-sm font-medium mb-2" style={{ color: '#e8e0d3' }}>
                   Message
                 </label>
                 <textarea
@@ -163,7 +166,8 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none"
+                  className="w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-1 transition-all resize-none"
+                  style={{ backgroundColor: '#050504', borderColor: '#050504', color: '#e8e0d3' }}
                   placeholder="Tell me about your project or opportunity..."
                 />
               </div>
@@ -171,11 +175,12 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full btn-primary flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full flex items-center justify-center gap-2 font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                style={{ backgroundColor: '#eba627', color: '#050504' }}
               >
                 {isSubmitting ? (
                   <>
-                    <div className="w-5 h-5 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin" />
+                    <div className="w-5 h-5 border-2 border-t-transparent rounded-full animate-spin" style={{ borderColor: '#050504' }} />
                     Sending...
                   </>
                 ) : (

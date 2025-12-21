@@ -6,6 +6,7 @@ const Hero = () => {
     <section
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20"
+      style={{ backgroundColor: '#394b36' }}
     >
       {/* Decorative Elements */}
       <div className="absolute top-20 left-10 text-primary text-4xl animate-float">✦</div>

@@ -44,6 +44,13 @@
     --forest: 100 17% 25%;
     --forest-light: 100 17% 35%;
     --amber: 26 50% 46%;
+    
+    /* Alternating section colors */
+    --section-dark: 102 17% 22%; /* #394b36 */
+    --section-light: 36 29% 87%; /* #e8e0d3 */
+    --dark-olive: 60 100% 2%; /* #050504 */
+    --orange: 42 82% 54%; /* #eba627 */
+    --gray-orange: 26 50% 46%; /* #ac693c */;
 
     --sidebar-background: 100 17% 20%;
     --sidebar-foreground: 36 29% 87%;
