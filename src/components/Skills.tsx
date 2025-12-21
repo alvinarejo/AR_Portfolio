@@ -14,13 +14,19 @@ const Skills = () => {
     { name: "Arduino", icon: Cpu },
   ];
 
-  const experienceAreas = [
-    { title: "Java Applications", description: "Built complete applications with GUI and database integration" },
-    { title: "IoT & Arduino", description: "Designed sensor-based automated systems" },
-    { title: "Frontend Development", description: "Understanding of HTML, CSS, and JavaScript basics" },
-    { title: "Backend Concepts", description: "Database design and API fundamentals" },
-    { title: "Data Visualization", description: "Creating insights with Tableau" },
-    { title: "AI Exploration", description: "Learning machine learning fundamentals" },
+  const internships = [
+    { 
+      title: "Software Developer Intern", 
+      company: "Cognifyz Technologies",
+      period: "Aug 2025 - Sep 2025",
+      description: "During my internship at Cognifyz Technologies, I worked on several small projects using Java. These included developing an Escape Room game, a Notes Manager, a Simple Number Patterns generator, and a Temperature Converter. Each project helped me apply my theoretical knowledge in practical scenarios, enhancing my problem-solving skills and understanding of software development."
+    },
+    { 
+      title: "Data Analysis and Visualization Intern", 
+      company: "1M1B (1 Million for 1 Billion)",
+      period: "Current",
+      description: "I have started learning how to use Tableau and exploring its core features. I am currently working on the initial planning and concept development for a digital carbon shadow dashboard. While the implementation phase has not started yet, I am focusing on understanding the data, defining the dashboard structure and preparing to translate the idea into a functional visualization."
+    },
   ];
 
   return (
@@ -85,7 +91,7 @@ const Skills = () => {
             </div>
           </div>
 
-          {/* Experience Areas */}
+          {/* Internship Experience */}
           <div className="bg-card p-8 rounded-2xl border border-border">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
@@ -93,16 +99,18 @@ const Skills = () => {
               </div>
               <h3 className="font-display text-xl font-semibold text-foreground">Experience</h3>
             </div>
-            <div className="space-y-3">
-              {experienceAreas.map((area) => (
+            <div className="space-y-4">
+              {internships.map((internship) => (
                 <div
-                  key={area.title}
-                  className="p-3 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors group"
+                  key={internship.title}
+                  className="p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors group"
                 >
-                  <h4 className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
-                    {area.title}
+                  <h4 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">
+                    {internship.title}
                   </h4>
-                  <p className="text-xs text-muted-foreground mt-1">{area.description}</p>
+                  <p className="text-xs text-primary font-medium mt-1">{internship.company}</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">{internship.period}</p>
+                  <p className="text-xs text-muted-foreground mt-2 leading-relaxed">{internship.description}</p>
                 </div>
               ))}
             </div>
